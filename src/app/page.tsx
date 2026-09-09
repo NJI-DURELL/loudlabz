@@ -147,7 +147,7 @@ export default function CataloguePage() {
                 <span className="hidden sm:inline text-gray-300">•</span>
 
                 <div className="inline-flex items-center gap-1.5 font-medium text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md border border-emerald-200/60 w-fit">
-                  <span>📮 Mon-Fri Postals: Shipping £7.50</span>
+                  <span>📮 Mon-Fri Postals: Shipping £10</span>
                 </div>
               </div>
             </div>
