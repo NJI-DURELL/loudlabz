@@ -2,7 +2,7 @@
 // Type definitions for LoudLabz catalog
 // ─────────────────────────────────────────────
 
-export type Category = 'all' | 'flower' | 'extracts' | 'edibles';
+export type Category = 'all' | 'flower' | 'cali-flower' | 'hash' | 'extracts' | 'edibles';
 
 export type Tier = 'premium' | 'standard' | 'value';
 

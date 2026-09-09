@@ -5,13 +5,486 @@
 import { Product } from '@/types';
 
 export const products: Product[] = [
-  // ── FLOWER ───────────────────────────────────
+  // ── UK FLOWER 🇬🇧 ─────────────────────────────
+  {
+    id: 'cookie-dawg',
+    name: 'Cookie Dawg 🍪',
+    shortDescription:
+      'Classic UK favourite crossing Girl Scout Cookies and Chemdawg. Nutty, pungent aroma with heavy-hitting relaxation.',
+    category: 'flower',
+    tier: 'standard',
+    pricingTiers: [
+      { weight: '14g', price: 90 },
+      { weight: '28g', price: 140 },
+    ],
+    fromPrice: 90,
+    available: true,
+    badge: 'UK Grade 🇬🇧',
+    iconName: 'Leaf',
+    origin: 'UK 🇬🇧',
+  },
+
+  // ── LOOSE CALI TOP SHELF FLOWER 🇺🇸 ───────────
+  {
+    id: 'bubblegum-breath',
+    name: 'Bubblegum Breath 🍬',
+    shortDescription:
+      'Sweet bubblegum aromas balanced with OG gas notes. Exceptionally frosty loose Cali top shelf.',
+    category: 'cali-flower',
+    tier: 'premium',
+    pricingTiers: [
+      { weight: '7g', price: 70 },
+      { weight: '14g', price: 120 },
+      { weight: '28g', price: 200 },
+    ],
+    fromPrice: 70,
+    available: true,
+    badge: 'Loose Top Shelf 🇺🇸',
+    iconName: 'Sparkles',
+    origin: 'Imported From Cali 🇺🇸',
+  },
+  {
+    id: 'pink-runtz',
+    name: 'Pink Runtz 🌷',
+    shortDescription:
+      'Iconic hybrid with a sugary sweet candy profile and colorful, trichome-dusted buds.',
+    category: 'cali-flower',
+    tier: 'premium',
+    pricingTiers: [
+      { weight: '7g', price: 70 },
+      { weight: '14g', price: 120 },
+      { weight: '28g', price: 200 },
+    ],
+    fromPrice: 70,
+    available: true,
+    badge: 'Loose Top Shelf 🇺🇸',
+    iconName: 'Sparkles',
+    origin: 'Imported From Cali 🇺🇸',
+  },
+  {
+    id: 'malibu-marker',
+    name: 'Malibu Marker 🖊️',
+    shortDescription:
+      'Unique Permanent Marker offspring delivering sharp, chemical-sweet terpene punch.',
+    category: 'cali-flower',
+    tier: 'premium',
+    pricingTiers: [
+      { weight: '7g', price: 70 },
+      { weight: '14g', price: 120 },
+      { weight: '28g', price: 200 },
+    ],
+    fromPrice: 70,
+    available: true,
+    badge: 'Loose Top Shelf 🇺🇸',
+    iconName: 'Sparkles',
+    origin: 'Imported From Cali 🇺🇸',
+  },
+  {
+    id: 'miami-heat',
+    name: 'Miami Heat 🏀',
+    shortDescription:
+      'High-potency exotic hybrid with tropical citrus and heavy diesel undertones.',
+    category: 'cali-flower',
+    tier: 'premium',
+    pricingTiers: [
+      { weight: '7g', price: 70 },
+      { weight: '14g', price: 120 },
+      { weight: '28g', price: 200 },
+    ],
+    fromPrice: 70,
+    available: true,
+    badge: 'Loose Top Shelf 🇺🇸',
+    iconName: 'Sparkles',
+    origin: 'Imported From Cali 🇺🇸',
+  },
+  {
+    id: 'blue-zushi',
+    name: 'Blue Zushi 🍣',
+    shortDescription:
+      'Award-winning Zkittlez cross with minty, berry-sweet aromas and euphoric energy.',
+    category: 'cali-flower',
+    tier: 'premium',
+    pricingTiers: [
+      { weight: '7g', price: 70 },
+      { weight: '14g', price: 120 },
+      { weight: '28g', price: 200 },
+    ],
+    fromPrice: 70,
+    available: true,
+    badge: 'Loose Top Shelf 🇺🇸',
+    iconName: 'Sparkles',
+    origin: 'Imported From Cali 🇺🇸',
+  },
+  {
+    id: 'goji-gushers',
+    name: 'Goji Gushers 🍬',
+    shortDescription:
+      'Exotic berry dessert strain bursting with juicy tropical fruit terpenes.',
+    category: 'cali-flower',
+    tier: 'premium',
+    pricingTiers: [
+      { weight: '7g', price: 70 },
+      { weight: '14g', price: 120 },
+      { weight: '28g', price: 200 },
+    ],
+    fromPrice: 70,
+    available: true,
+    badge: 'Loose Top Shelf 🇺🇸',
+    iconName: 'Sparkles',
+    origin: 'Imported From Cali 🇺🇸',
+  },
+  {
+    id: 'midnight-moonlight',
+    name: 'Midnight Moonlight',
+    shortDescription:
+      'Deep purple indica-dominant selection crafted for late-night relaxation.',
+    category: 'cali-flower',
+    tier: 'premium',
+    pricingTiers: [
+      { weight: '7g', price: 70 },
+      { weight: '14g', price: 120 },
+      { weight: '28g', price: 200 },
+    ],
+    fromPrice: 70,
+    available: true,
+    badge: 'Loose Top Shelf 🇺🇸',
+    iconName: 'Sparkles',
+    origin: 'Imported From Cali 🇺🇸',
+  },
+  {
+    id: 'smores',
+    name: 'Smores 🍪',
+    shortDescription:
+      'Rich marshmallow, chocolate, and graham cracker terpene profile with heavy body feel.',
+    category: 'cali-flower',
+    tier: 'premium',
+    pricingTiers: [
+      { weight: '7g', price: 70 },
+      { weight: '14g', price: 120 },
+      { weight: '28g', price: 200 },
+    ],
+    fromPrice: 70,
+    available: true,
+    badge: 'Loose Top Shelf 🇺🇸',
+    iconName: 'Sparkles',
+    origin: 'Imported From Cali 🇺🇸',
+  },
+  {
+    id: 'amaretto-sour',
+    name: 'Amaretto Sour 🌈',
+    shortDescription:
+      'Sour cherry and sweet almond flavours with intense bag appeal and dense nug structure.',
+    category: 'cali-flower',
+    tier: 'premium',
+    pricingTiers: [
+      { weight: '7g', price: 70 },
+      { weight: '14g', price: 120 },
+      { weight: '28g', price: 200 },
+    ],
+    fromPrice: 70,
+    available: true,
+    badge: 'Loose Top Shelf 🇺🇸',
+    iconName: 'Sparkles',
+    origin: 'Imported From Cali 🇺🇸',
+  },
+  {
+    id: 'z3',
+    name: 'Z3 🌈',
+    shortDescription:
+      'Triple-crossed Zkittlez genetics delivering candy-shop sweetness and smooth smoke.',
+    category: 'cali-flower',
+    tier: 'premium',
+    pricingTiers: [
+      { weight: '7g', price: 70 },
+      { weight: '14g', price: 120 },
+      { weight: '28g', price: 200 },
+    ],
+    fromPrice: 70,
+    available: true,
+    badge: 'Loose Top Shelf 🇺🇸',
+    iconName: 'Sparkles',
+    origin: 'Imported From Cali 🇺🇸',
+  },
+  {
+    id: 'gmo',
+    name: 'GMO ⛽️',
+    shortDescription:
+      'Legendary Garlic Cookies strain. Pungent garlic, mushroom, and fuel notes with long-lasting potency.',
+    category: 'cali-flower',
+    tier: 'premium',
+    pricingTiers: [
+      { weight: '7g', price: 70 },
+      { weight: '14g', price: 120 },
+      { weight: '28g', price: 200 },
+    ],
+    fromPrice: 70,
+    available: true,
+    badge: 'Loose Top Shelf 🇺🇸',
+    iconName: 'Sparkles',
+    origin: 'Imported From Cali 🇺🇸',
+  },
+  {
+    id: 'sundae-driver',
+    name: 'Sundae Driver 🏍️',
+    shortDescription:
+      'Fruity Pebbles x Grape Pie. Smooth chocolate and sugary fruit aromas for calm, uplifting vibes.',
+    category: 'cali-flower',
+    tier: 'premium',
+    pricingTiers: [
+      { weight: '7g', price: 70 },
+      { weight: '14g', price: 120 },
+      { weight: '28g', price: 200 },
+    ],
+    fromPrice: 70,
+    available: true,
+    badge: 'Loose Top Shelf 🇺🇸',
+    iconName: 'Sparkles',
+    origin: 'Imported From Cali 🇺🇸',
+  },
+  {
+    id: 'whisky-octane',
+    name: 'Whisky Octane 🥃',
+    shortDescription:
+      'Heavy gassy octane mixed with rich woody oak undertones. High terpene top shelf.',
+    category: 'cali-flower',
+    tier: 'premium',
+    pricingTiers: [
+      { weight: '7g', price: 70 },
+      { weight: '14g', price: 120 },
+      { weight: '28g', price: 200 },
+    ],
+    fromPrice: 70,
+    available: true,
+    badge: 'Loose Top Shelf 🇺🇸',
+    iconName: 'Sparkles',
+    origin: 'Imported From Cali 🇺🇸',
+  },
+
+  // ── MID SHELF CALI 🇺🇸 ─────────────────────────
+  {
+    id: 'cherry-runtz',
+    name: 'Cherry Runtz 🍒',
+    shortDescription:
+      'Sweet tart cherry flavours combined with classic candy Runtz profile.',
+    category: 'cali-flower',
+    tier: 'standard',
+    pricingTiers: [
+      { weight: '7g', price: 50 },
+      { weight: '14g', price: 90 },
+      { weight: '28g', price: 150 },
+    ],
+    fromPrice: 50,
+    available: true,
+    badge: 'Mid Shelf 🇺🇸',
+    iconName: 'Leaf',
+    origin: 'Imported From Cali 🇺🇸',
+  },
+  {
+    id: 'vanilla-cupcake',
+    name: 'Vanilla Cupcake 🧁',
+    shortDescription:
+      'Creamy, dessert-forward flower with doughy vanilla notes and uplifting effects.',
+    category: 'cali-flower',
+    tier: 'standard',
+    pricingTiers: [
+      { weight: '7g', price: 50 },
+      { weight: '14g', price: 90 },
+      { weight: '28g', price: 150 },
+    ],
+    fromPrice: 50,
+    available: true,
+    badge: 'Mid Shelf 🇺🇸',
+    iconName: 'Leaf',
+    origin: 'Imported From Cali 🇺🇸',
+  },
+  {
+    id: 'black-canaeolini',
+    name: 'Black Canaeolini 🍇',
+    shortDescription:
+      'Dark purple, grape-infused strain with deep earthy spice and smooth burning ash.',
+    category: 'cali-flower',
+    tier: 'standard',
+    pricingTiers: [
+      { weight: '7g', price: 50 },
+      { weight: '14g', price: 90 },
+      { weight: '28g', price: 150 },
+    ],
+    fromPrice: 50,
+    available: true,
+    badge: 'Mid Shelf 🇺🇸',
+    iconName: 'Leaf',
+    origin: 'Imported From Cali 🇺🇸',
+  },
+
+  // ── BRANDED CALI 🇺🇸 ──────────────────────────
+  {
+    id: 'toad-venom-karma-cartel',
+    name: 'Toad Venom 🐸 (Karma Cartel)',
+    shortDescription:
+      'Ultra-exclusive Karma Cartel sealed 7g jar. Pungent sour gas and potent resin production.',
+    category: 'cali-flower',
+    tier: 'premium',
+    pricingTiers: [{ weight: '7g Jar', price: 180 }],
+    fromPrice: 180,
+    available: true,
+    isBestSeller: true,
+    badge: 'Karma Cartel 🐸',
+    iconName: 'Sparkles',
+    origin: 'Sealed Jar Cali 🇺🇸',
+  },
+  {
+    id: 'zheetos-karma-cartel',
+    name: 'Zheetos 🐆 (Karma Cartel)',
+    shortDescription:
+      'Official Karma Cartel 3.5g pack. Cheesy, funky Zkittlez cross with legendary bag appeal.',
+    category: 'cali-flower',
+    tier: 'premium',
+    pricingTiers: [{ weight: '3.5g Pack', price: 80 }],
+    fromPrice: 80,
+    available: true,
+    badge: 'Karma Cartel 🐆',
+    iconName: 'Sparkles',
+    origin: 'Sealed Pack Cali 🇺🇸',
+  },
+
+  // ── CALI EXOTICS 🇺🇸 ───────────────────────────
+  {
+    id: 'batman-ice-cream-cake',
+    name: 'Batman Ice Cream Cake 🍨',
+    shortDescription:
+      'Exotic dark batch of Ice Cream Cake. Sweet vanilla cream and frosty trichome coverage.',
+    category: 'cali-flower',
+    tier: 'premium',
+    pricingTiers: [
+      { weight: '7g', price: 80 },
+      { weight: '14g', price: 130 },
+      { weight: '28g', price: 220 },
+    ],
+    fromPrice: 80,
+    available: true,
+    badge: 'Cali Exotics 🇺🇸',
+    iconName: 'Sparkles',
+    origin: 'Imported From Cali 🇺🇸',
+  },
+
+  // ── LOOSE BRANDED CUTS 🇺🇸 ─────────────────────
+  {
+    id: 'black-magic-wizard-treez',
+    name: 'Black Magic 🌌 (Wizard Treez)',
+    shortDescription:
+      'Authentic Wizard Treez cut. Deep blackberry gas with an enchanting, dense structure.',
+    category: 'cali-flower',
+    tier: 'premium',
+    pricingTiers: [
+      { weight: '3.5g', price: 50 },
+      { weight: '7g', price: 90 },
+      { weight: '14g', price: 150 },
+      { weight: '28g', price: 275 },
+    ],
+    fromPrice: 50,
+    available: true,
+    badge: 'Wizard Treez 🌌',
+    iconName: 'Sparkles',
+    origin: 'Wizard Treez Cut 🇺🇸',
+  },
+  {
+    id: 'zelium-doja',
+    name: 'Zelium 🍒 (Doja)',
+    shortDescription:
+      'Official Doja Exclusive cut. Intense zesty cherry terpenes and heavy resin head.',
+    category: 'cali-flower',
+    tier: 'premium',
+    pricingTiers: [
+      { weight: '3.5g', price: 50 },
+      { weight: '7g', price: 90 },
+      { weight: '14g', price: 150 },
+      { weight: '28g', price: 275 },
+    ],
+    fromPrice: 50,
+    available: true,
+    badge: 'Doja Cut 🍒',
+    iconName: 'Sparkles',
+    origin: 'Doja Exclusive 🇺🇸',
+  },
+  {
+    id: 'emerald-z-super-dope',
+    name: 'Emerald Z (Super Dope)',
+    shortDescription:
+      'Rare Super Dope genetics. Bright emerald green nugs overflowing with candied Z terpene juice.',
+    category: 'cali-flower',
+    tier: 'premium',
+    pricingTiers: [
+      { weight: '3.5g', price: 50 },
+      { weight: '7g', price: 90 },
+      { weight: '14g', price: 150 },
+      { weight: '28g', price: 275 },
+    ],
+    fromPrice: 50,
+    available: true,
+    badge: 'Super Dope 💎',
+    iconName: 'Sparkles',
+    origin: 'Super Dope Cut 🇺🇸',
+  },
+
+  // ── HASH #️⃣ ────────────────────────────────────
+  {
+    id: 'wpff-filter-hash',
+    name: 'WPFF 73-80u Filter 🧊',
+    shortDescription:
+      'Whole Plant Fresh Frozen 73-80u filtered hash. Clean melt, intense flavor profile.',
+    category: 'hash',
+    tier: 'premium',
+    pricingTiers: [
+      { weight: '3.5g', price: 60 },
+      { weight: '7g', price: 100 },
+      { weight: '14g', price: 175 },
+    ],
+    fromPrice: 60,
+    available: true,
+    badge: 'Filtered Hash 🧊',
+    iconName: 'Sparkles',
+  },
+  {
+    id: 'pure-terpz-iceolator',
+    name: 'Pure Terpz Iceolator 🧊',
+    shortDescription:
+      'High-purity iceolator hash extracted for maximum terpene preservation and smooth burn.',
+    category: 'hash',
+    tier: 'premium',
+    pricingTiers: [
+      { weight: '3.5g', price: 60 },
+      { weight: '7g', price: 90 },
+      { weight: '14g', price: 130 },
+    ],
+    fromPrice: 60,
+    available: true,
+    badge: 'Iceolator 🧊',
+    iconName: 'Sparkles',
+  },
+  {
+    id: 'cold-press-bubble',
+    name: 'Cold Press Bubble 🫧',
+    shortDescription:
+      'Traditional solventless cold press bubble hash with oily texture and rich hashish aroma.',
+    category: 'hash',
+    tier: 'standard',
+    pricingTiers: [
+      { weight: '3.5g', price: 50 },
+      { weight: '7g', price: 80 },
+      { weight: '14g', price: 120 },
+      { weight: '28g', price: 220 },
+    ],
+    fromPrice: 50,
+    available: true,
+    badge: 'Cold Press 🫧',
+    iconName: 'Sparkles',
+  },
   {
     id: 'kosher-kush-static',
     name: 'Kosher Kush',
     shortDescription:
       'A legendary indica-dominant cultivar renowned for its earthy pine aroma, dense resinous buds, and deeply relaxing effects. Top-shelf static.',
-    category: 'flower',
+    category: 'hash',
     tier: 'premium',
     pricingTiers: [
       { weight: '3.5g', price: 50 },
@@ -24,14 +497,13 @@ export const products: Product[] = [
     isBestSeller: true,
     badge: 'Static ⚡',
     iconName: 'Leaf',
-    origin: undefined,
   },
   {
     id: 'gelato-static',
     name: 'Gelato',
     shortDescription:
       'A beautifully balanced hybrid with sweet dessert-like aromas of citrus and berry, delivering euphoric, creative energy with a smooth finish.',
-    category: 'flower',
+    category: 'hash',
     tier: 'premium',
     pricingTiers: [
       { weight: '3.5g', price: 50 },
@@ -44,14 +516,13 @@ export const products: Product[] = [
     isBestSeller: true,
     badge: 'Static ⚡',
     iconName: 'Leaf',
-    origin: undefined,
   },
   {
     id: 'white-dior-semi-dry',
     name: 'White Dior',
     shortDescription:
       'Premium semi-dry import with a creamy, floral terpene profile. Exceptional cure and trim work, a connoisseur-grade experience.',
-    category: 'flower',
+    category: 'hash',
     tier: 'premium',
     pricingTiers: [
       { weight: '14g', price: 100 },
@@ -62,28 +533,26 @@ export const products: Product[] = [
     available: true,
     badge: 'Premium Semi Dry',
     iconName: 'Sparkles',
-    origin: undefined,
   },
   {
     id: 'lower-tier-semi-dry',
     name: 'Semi Dry (Lower Tier)',
     shortDescription:
       'Solid everyday semi-dry flower. Great potency-to-price ratio for regular consumers. 100g minimum order.',
-    category: 'flower',
+    category: 'hash',
     tier: 'value',
     pricingTiers: [{ weight: '100g', price: 350 }],
     fromPrice: 350,
     available: true,
     minOrderNote: '100g minimum order',
     iconName: 'Leaf',
-    origin: undefined,
   },
   {
     id: 'commercial',
     name: 'Commercial',
     shortDescription:
       'High-volume commercial grade. Consistent quality in bulk quantities, ideal for resale or wholesale buyers. 100g minimum.',
-    category: 'flower',
+    category: 'hash',
     tier: 'value',
     pricingTiers: [
       { weight: '100g', price: 250 },
@@ -93,10 +562,9 @@ export const products: Product[] = [
     available: true,
     minOrderNote: '100g minimum order',
     iconName: 'Package',
-    origin: undefined,
   },
 
-  // ── EXTRACTS ──────────────────────────────────
+  // ── EXTRACTS 🍯 ───────────────────────────────
   {
     id: 'hash-rosin',
     name: 'Hash Rosin',
@@ -152,10 +620,10 @@ export const products: Product[] = [
     origin: 'Imported From Cali 🇺🇸',
   },
   {
-    id: 'live-sauce',
-    name: 'Live Sauce',
+    id: 'live-sauce-chocolate-chip',
+    name: 'Live Sauce - Chocolate Chip',
     shortDescription:
-      'High-terpene full-spectrum extract made from fresh-frozen plants. Liquid gold. Available in four hand-picked Cali strains.',
+      'High-terpene full-spectrum extract made from fresh-frozen Chocolate Chip plants. Rich, dessert-like flavour with deep relaxation.',
     category: 'extracts',
     tier: 'standard',
     pricingTiers: [
@@ -168,10 +636,63 @@ export const products: Product[] = [
     badge: 'Imported from Cali 🇺🇸',
     iconName: 'Beaker',
     origin: 'Imported From Cali 🇺🇸',
-    strains: ['Chocolate Chip', 'Mac', 'Jelly Donut', 'Motor Breath'],
+  },
+  {
+    id: 'live-sauce-mac',
+    name: 'Live Sauce - Mac',
+    shortDescription:
+      'Full-spectrum live sauce from fresh-frozen Mac (Miracle Alien Cookies). Creamy, citrus-forward terpene profile with balanced effects.',
+    category: 'extracts',
+    tier: 'standard',
+    pricingTiers: [
+      { weight: '1g', price: 40 },
+      { weight: '3.5g', price: 80 },
+      { weight: '7g', price: 130 },
+    ],
+    fromPrice: 40,
+    available: true,
+    badge: 'Imported from Cali 🇺🇸',
+    iconName: 'Beaker',
+    origin: 'Imported From Cali 🇺🇸',
+  },
+  {
+    id: 'live-sauce-jelly-donut',
+    name: 'Live Sauce - Jelly Donut',
+    shortDescription:
+      'Live sauce extracted from fresh-frozen Jelly Donut flower. Sweet, doughy aroma with fruity undertones and a smooth, euphoric finish.',
+    category: 'extracts',
+    tier: 'standard',
+    pricingTiers: [
+      { weight: '1g', price: 40 },
+      { weight: '3.5g', price: 80 },
+      { weight: '7g', price: 130 },
+    ],
+    fromPrice: 40,
+    available: true,
+    badge: 'Imported from Cali 🇺🇸',
+    iconName: 'Beaker',
+    origin: 'Imported From Cali 🇺🇸',
+  },
+  {
+    id: 'live-sauce-motor-breath',
+    name: 'Live Sauce - Motor Breath',
+    shortDescription:
+      'Potent live sauce from fresh-frozen Motor Breath. Fuel-forward, gassy terpenes with a heavy, sedating body effect.',
+    category: 'extracts',
+    tier: 'standard',
+    pricingTiers: [
+      { weight: '1g', price: 40 },
+      { weight: '3.5g', price: 80 },
+      { weight: '7g', price: 130 },
+    ],
+    fromPrice: 40,
+    available: true,
+    badge: 'Imported from Cali 🇺🇸',
+    iconName: 'Beaker',
+    origin: 'Imported From Cali 🇺🇸',
   },
 
-  // ── EDIBLES ───────────────────────────────────
+  // ── EDIBLES 🍬 ─────────────────────────────────
   {
     id: 'jolly-rancher-gummies',
     name: 'Jolly Rancher Gummies',
@@ -184,14 +705,15 @@ export const products: Product[] = [
     available: true,
     badge: 'Deal Available',
     iconName: 'Candy',
-    origin: undefined,
     minOrderNote: 'Deals available when buying multiple packs',
   },
 ];
 
 export const categories = [
   { value: 'all', label: 'All Products' },
-  { value: 'flower', label: '🌿 Flower' },
+  { value: 'flower', label: '🇬🇧 UK Flower' },
+  { value: 'cali-flower', label: '🇺🇸 Cali Flower' },
+  { value: 'hash', label: '#️⃣ Hash' },
   { value: 'extracts', label: '🍯 Extracts' },
   { value: 'edibles', label: '🍬 Edibles' },
 ] as const;

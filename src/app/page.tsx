@@ -128,19 +128,27 @@ export default function CataloguePage() {
               {/* Search bar */}
               <SearchBar value={searchQuery} onChange={setSearchQuery} />
 
-              {/* Order notice */}
-              <div className="mt-4 flex flex-wrap items-center gap-2 text-xs text-gray-500">
-                <span className="font-medium text-gray-700">How to order:</span>
-                <span>Direct orders & enquiries via Telegram:</span>
-                <a
-                  href="https://t.me/john_supply_uk"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 font-semibold text-emerald-700 hover:text-emerald-800 underline underline-offset-2"
-                >
-                  <Send className="w-3 h-3" />
-                  @john_supply_uk
-                </a>
+              {/* Order notice + Shipping badge */}
+              <div className="mt-4 flex flex-col sm:flex-row sm:items-center gap-3 text-xs text-gray-500">
+                <div className="flex items-center gap-1.5">
+                  <span className="font-medium text-gray-700">How to order:</span>
+                  <span>Telegram</span>
+                  <a
+                    href="https://t.me/john_supply_uk"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 font-semibold text-emerald-700 hover:text-emerald-800 underline underline-offset-2"
+                  >
+                    <Send className="w-3 h-3" />
+                    @john_supply_uk
+                  </a>
+                </div>
+
+                <span className="hidden sm:inline text-gray-300">•</span>
+
+                <div className="inline-flex items-center gap-1.5 font-medium text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md border border-emerald-200/60 w-fit">
+                  <span>📮 Mon-Fri Postals: Shipping £7.50</span>
+                </div>
               </div>
             </div>
           </div>
