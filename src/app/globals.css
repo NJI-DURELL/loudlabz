@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+/* ── Design tokens ─────────────────────────────────────── */
+@theme inline {
+  /* Typography */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  /* Brand palette: Emerald Precision */
+  --color-emerald-50:  #ECFDF5;
+  --color-emerald-100: #D1FAE5;
+  --color-emerald-200: #A7F3D0;
+  --color-emerald-500: #10B981;
+  --color-emerald-600: #059669;
+  --color-emerald-700: #047857;
+
+  /* Neutral */
+  --color-background: #FAFAFA;
+  --color-card:       #FFFFFF;
+
+  /* Text */
+  --color-text-primary:   #111827;
+  --color-text-secondary: #4B5563;
+  --color-text-muted:     #6B7280;
+
+  /* Borders */
+  --color-border: #E5E7EB;
+}
+
+/* ── Base resets ───────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FAFAFA;
+  color: #111827;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Utility: line-clamp (fallback for older browsers) ─── */
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ── Smooth card hover transitions ────────────────────── */
+@media (prefers-reduced-motion: no-preference) {
+  .group {
+    will-change: transform;
+  }
+}
+
+/* ── Focus-visible ring for accessibility ─────────────── */
+:focus-visible {
+  outline: 2px solid #059669;
+  outline-offset: 2px;
+}
+
+/* ── Hide Next.js dev indicator badge ─────────────────── */
+nextjs-portal,
+[data-nextjs-dev-tools],
+[data-nextjs-toast],
+[data-next-badge],
+#next-logo {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
